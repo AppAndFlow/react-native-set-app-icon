@@ -24,12 +24,12 @@ RCT_REMAP_METHOD(changeIcon, iconName:(NSString *)iconName resolver:(RCTPromiseR
     if (@available(iOS 10.3, *)) {
         if ([[UIApplication sharedApplication] supportsAlternateIcons] == NO) {
             reject(@"Error", @"Alternate icon not supported", error);
-            RCTLog(@"Alternate icons are not supported");
+            RCTLog(@"Alternate Icons are not supported on this device");
             return;
         }
     } else {
-        reject(@"Error", @"Need IOS Version 10.3 at least", error);
-        RCTLog(@"Alternate icons are not supported");
+        reject(@"Error", @"This feature requires iOS 10.3 or higher", error);
+        RCTLog(@"Alternate Icons are not supported on this device");
         return;
     }
 
@@ -43,8 +43,8 @@ RCT_REMAP_METHOD(changeIcon, iconName:(NSString *)iconName resolver:(RCTPromiseR
             return;
         }
     } else {
-        reject(@"Error", @"Need IOS Version 10.3 at least", error);
-        RCTLog(@"Alternate icons are not supported");
+        reject(@"Error", @"This feature requires iOS 10.3 or higher", error);
+        RCTLog(@"Alternate Icons are not supported on this device");
         return;
     }
 
@@ -56,8 +56,8 @@ RCT_REMAP_METHOD(changeIcon, iconName:(NSString *)iconName resolver:(RCTPromiseR
             RCTLog(@"%@", [error description]);
         }];
     } else {
-        reject(@"Error", @"Need IOS Version 10.3 at least", error);
-        RCTLog(@"Alternate icons are not supported");
+        reject(@"Error", @"This feature requires iOS 10.3 or higher", error);
+        RCTLog(@"Alternate Icons are not supported on this device");
         return;
     }
 }

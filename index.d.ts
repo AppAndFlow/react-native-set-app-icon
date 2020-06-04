@@ -1,5 +1,5 @@
 declare const SetAppIcon: {
-  getIconName(): Promise<{ iconName: string }>;
+  getIconName(cb: (icon: { iconName: string }) => void): void;
   changeIcon(iconName: string): Promise<boolean>;
   supportsDynamicAppIcon(): Promise<boolean>;
 };
