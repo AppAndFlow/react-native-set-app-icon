@@ -32,8 +32,7 @@ RCT_REMAP_METHOD(changeIcon, iconName:(NSString *)iconName resolver:(RCTPromiseR
 }
 
 RCT_EXPORT_METHOD(getIconName:(RCTResponseSenderBlock) callback ){
-    NSString *name = @"default";
-    NSDictionary *results;
+    NSError *error = nil;
 
      // Not supported
     if ([[UIApplication sharedApplication] supportsAlternateIcons] == NO) {
@@ -42,12 +41,13 @@ RCT_EXPORT_METHOD(getIconName:(RCTResponseSenderBlock) callback ){
         return;
     }
 
+    NSString *name = @"default";
+    NSDictionary *results;
+
     // if icon is nil return "default"
-    if([[UIApplication sharedApplication] supportsAlternateIcons ]){
-        name = [[UIApplication sharedApplication] alternateIconName];
-        if(name == nil){
-            name = @"default";
-        }
+    name = [[UIApplication sharedApplication] alternateIconName];
+    if(name == nil){
+        name = @"default";
     }
 
     results = @{
