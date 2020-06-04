@@ -6,6 +6,12 @@
 
 RCT_EXPORT_MODULE()
 
+RCT_REMAP_METHOD(supportsDynamicAppIcon, resolver:(RCTPromiseResolveBlock)resolve rejecter:(RCTPromiseRejectBlock)reject)
+{
+  bool supported = [[UIApplication sharedApplication] supportsAlternateIcons];
+  resolve(@(supported));
+}
+
 RCT_REMAP_METHOD(changeIcon, iconName:(NSString *)iconName resolver:(RCTPromiseResolveBlock)resolve rejecter:(RCTPromiseRejectBlock)reject) {
     NSError *error = nil;
 

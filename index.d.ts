@@ -1,6 +1,7 @@
-declare const ChangeAppicon: {
+declare const SetAppIcon: {
   getIconName(): Promise<{ iconName: string }>;
   changeIcon(iconName: string): Promise<boolean>;
+  supportsDynamicAppIcon(): Promise<boolean>;
 };
 
-export default ChangeAppicon;
+export default SetAppIcon;

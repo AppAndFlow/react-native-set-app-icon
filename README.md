@@ -1,17 +1,18 @@
-# react-native-change-app-icon
+# react-native-set-app-icon
 
 ## Getting started
 
-`$ npm install react-native-change-app-icon --save`
+`$ npm install react-native-set-app-icon --save`
 
 ### Mostly automatic installation
 
-`$ react-native link react-native-change-app-icon`
+`$ react-native link react-native-set-app-icon`
 
 ## Usage
+
 ```javascript
-import ChangeAppIcon from 'react-native-change-app-icon';
+import SetAppIcon from "react-native-set-app-icon";
 
 // TODO: What to do with the module?
-ChangeAppIcon;
+SetAppIcon;
 ```
