@@ -1,5 +1,7 @@
 # react-native-set-app-icon
 
+## ANDROID IN PROGRESS
+
 ## Getting started
 
 `$ npm install react-native-set-app-icon --save`
