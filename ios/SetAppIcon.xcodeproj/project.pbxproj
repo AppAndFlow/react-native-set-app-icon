@@ -19,7 +19,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		134814201AA4EA6300B7C361 /* libChangeAppIcon.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libChangeAppIcon.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		134814201AA4EA6300B7C361 /* libSetAppIcon.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSetAppIcon.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,7 +36,7 @@
 		134814211AA4EA7D00B7C361 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				134814201AA4EA6300B7C361 /* libChangeAppIcon.a */,
+				134814201AA4EA6300B7C361 /* libSetAppIcon.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -51,9 +51,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		58B511DA1A9E6C8500147676 /* ChangeAppIcon */ = {
+		58B511DA1A9E6C8500147676 /* SetAppIcon */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "ChangeAppIcon" */;
+			buildConfigurationList = 58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "SetAppIcon" */;
 			buildPhases = (
 				58B511D71A9E6C8500147676 /* Sources */,
 				58B511D81A9E6C8500147676 /* Frameworks */,
@@ -63,9 +63,9 @@
 			);
 			dependencies = (
 			);
-			name = ChangeAppIcon;
+			name = SetAppIcon;
 			productName = RCTDataManager;
-			productReference = 134814201AA4EA6300B7C361 /* libChangeAppIcon.a */;
+			productReference = 134814201AA4EA6300B7C361 /* libSetAppIcon.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -82,7 +82,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 58B511D61A9E6C8500147676 /* Build configuration list for PBXProject "ChangeAppIcon" */;
+			buildConfigurationList = 58B511D61A9E6C8500147676 /* Build configuration list for PBXProject "SetAppIcon" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -95,7 +95,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				58B511DA1A9E6C8500147676 /* ChangeAppIcon */,
+				58B511DA1A9E6C8500147676 /* SetAppIcon */,
 			);
 		};
 /* End PBXProject section */
@@ -233,7 +233,7 @@
 				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = ChangeAppIcon;
+				PRODUCT_NAME = SetAppIcon;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -249,7 +249,7 @@
 				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = ChangeAppIcon;
+				PRODUCT_NAME = SetAppIcon;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -257,7 +257,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		58B511D61A9E6C8500147676 /* Build configuration list for PBXProject "ChangeAppIcon" */ = {
+		58B511D61A9E6C8500147676 /* Build configuration list for PBXProject "SetAppIcon" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				58B511ED1A9E6C8500147676 /* Debug */,
@@ -266,7 +266,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "ChangeAppIcon" */ = {
+		58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "SetAppIcon" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				58B511F01A9E6C8500147676 /* Debug */,
