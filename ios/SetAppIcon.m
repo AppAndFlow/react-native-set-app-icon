@@ -74,10 +74,6 @@ RCT_EXPORT_METHOD(getIconName:(RCTResponseSenderBlock) callback){
                     name = @"default";
                 }
             }
-        } else {
-            reject(@"Error", @"Need IOS Version 10.3 at least", error);
-            RCTLog(@"Alternate icons are not supported");
-            return;
         }
     }
 
