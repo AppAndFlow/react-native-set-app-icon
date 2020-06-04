@@ -1,15 +1,16 @@
 {
-  "name": "react-native-change-app-icon",
-  "title": "React Native Change App Icon",
+  "name": "react-native-set-app-icon",
+  "title": "React Native Set App Icon",
   "version": "0.0.1",
-  "description": "Change app icon inside your application",
+  "description": "Set app icon inside your application",
   "main": "index.js",
   "files": [
     "README.md",
     "android",
     "index.js",
+    "index.d.ts",
     "ios",
-    "react-native-change-app-icon.podspec"
+    "react-native-set-app-icon.podspec"
   ],
   "types": "index.d.ts",
   "scripts": {
@@ -17,8 +18,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/EQuimper/react-native-change-app-icon.git",
-    "baseUrl": "https://github.com/EQuimper/react-native-change-app-icon"
+    "url": "git+https://github.com/EQuimper/react-native-set-app-icon.git",
+    "baseUrl": "https://github.com/EQuimper/react-native-set-app-icon"
   },
   "keywords": [
     "react-native"

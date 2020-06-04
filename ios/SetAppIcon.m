@@ -1,6 +1,6 @@
-#import "ChangeAppIcon.h"
+#import "SetAppIcon.h"
 
-@implementation ChangeAppIcon
+@implementation SetAppIcon
 
 RCT_EXPORT_MODULE()
 

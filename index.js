@@ -1,5 +1,5 @@
 import { NativeModules } from "react-native";
 
-const { ChangeAppIcon } = NativeModules;
+const { SetAppIcon } = NativeModules;
 
-export default ChangeAppIcon;
+export default SetAppIcon;

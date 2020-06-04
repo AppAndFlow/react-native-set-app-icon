@@ -5,18 +5,18 @@ import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.bridge.Callback;
 
-public class ChangeAppIconModule extends ReactContextBaseJavaModule {
+public class SetAppIconModule extends ReactContextBaseJavaModule {
 
     private final ReactApplicationContext reactContext;
 
-    public ChangeAppIconModule(ReactApplicationContext reactContext) {
+    public SetAppIconModule(ReactApplicationContext reactContext) {
         super(reactContext);
         this.reactContext = reactContext;
     }
 
     @Override
     public String getName() {
-        return "ChangeAppIcon";
+        return "SetAppIcon";
     }
 
     @ReactMethod

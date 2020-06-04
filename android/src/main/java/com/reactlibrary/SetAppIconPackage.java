@@ -10,10 +10,10 @@ import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.uimanager.ViewManager;
 import com.facebook.react.bridge.JavaScriptModule;
 
-public class ChangeAppIconPackage implements ReactPackage {
+public class SetAppIconPackage implements ReactPackage {
     @Override
     public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
-        return Arrays.<NativeModule>asList(new ChangeAppIconModule(reactContext));
+        return Arrays.<NativeModule>asList(new SetAppIconModule(reactContext));
     }
 
     @Override
