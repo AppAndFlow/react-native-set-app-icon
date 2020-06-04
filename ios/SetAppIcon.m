@@ -3,8 +3,6 @@
 
 @implementation SetAppIcon
 
-#define SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v)  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
-
 RCT_EXPORT_MODULE()
 
 RCT_REMAP_METHOD(supportsDynamicAppIcon, resolver:(RCTPromiseResolveBlock)resolve rejecter:(RCTPromiseRejectBlock)reject)
@@ -66,13 +64,11 @@ RCT_EXPORT_METHOD(getIconName:(RCTResponseSenderBlock) callback){
     NSString *name = @"default";
     NSDictionary *results;
 
-    if( SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"10.3") ){
-        if (@available(iOS 10.3, *)) {
-            if( [[UIApplication sharedApplication] supportsAlternateIcons ] ){
-                name = [[UIApplication sharedApplication] alternateIconName];
-                if(name == nil){
-                    name = @"default";
-                }
+    if (@available(iOS 10.3, *)) {
+        if( [[UIApplication sharedApplication] supportsAlternateIcons ] ){
+            name = [[UIApplication sharedApplication] alternateIconName];
+            if(name == nil){
+                name = @"default";
             }
         }
     }
