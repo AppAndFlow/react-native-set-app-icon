@@ -1,6 +1,6 @@
 declare const ChangeAppicon: {
-  getIconName(): Promise<string>;
-  changeIcon(iconName: string): Promise<string>;
+  getIconName(): Promise<{ iconName: string }>;
+  changeIcon(iconName: string): Promise<boolean>;
 };
 
 export default ChangeAppicon;
