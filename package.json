@@ -1,8 +1,8 @@
 {
   "name": "react-native-change-app-icon",
   "title": "React Native Change App Icon",
-  "version": "1.0.0",
-  "description": "TODO",
+  "version": "0.0.1",
+  "description": "Change app icon inside your application",
   "main": "index.js",
   "files": [
     "README.md",
@@ -11,20 +11,21 @@
     "ios",
     "react-native-change-app-icon.podspec"
   ],
+  "types": "index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/github_account/react-native-change-app-icon.git",
-    "baseUrl": "https://github.com/github_account/react-native-change-app-icon"
+    "url": "git+https://github.com/EQuimper/react-native-change-app-icon.git",
+    "baseUrl": "https://github.com/EQuimper/react-native-change-app-icon"
   },
   "keywords": [
     "react-native"
   ],
   "author": {
-    "name": "Your Name",
-    "email": "yourname@email.com"
+    "name": "Emanuel Quimper",
+    "email": "quimperemanuel@gmail.com"
   },
   "license": "MIT",
   "licenseFilename": "LICENSE",
