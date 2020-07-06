@@ -1,5 +1,7 @@
 # react-native-set-app-icon
 
+Let your users dynamically change their app icons directly from within the app.
+
 ## ANDROID IN PROGRESS
 
 ## Getting started
@@ -14,11 +16,11 @@
 
 Setup XCode
 
-Put all your image as `@2x.png` `@3x.png` in the root of your project setups
+Put all your images as `@2x.png` `@3x.png` in the root of your project setup.
 
 ![](docs/icons.png)
 
-After this go in your `Info.plist` and follow this image setup.
+Once that's done, go to `Info.plist` and follow this setup : 
 
 ![](docs/infoplist.png)
 
@@ -30,13 +32,13 @@ import SetAppIcon from "react-native-set-app-icon";
 
 ### changeAppIcon
 
-Promise who return a boolean. Take the iconName name set in your config.
+Promise that returns a boolean. Takes the `iconName` name set in your config.
 
 ```js
 SetAppIcon.changeIcon(iconName: string): Promise<boolean>;
 ```
 
-If you want to set the default back just use `null`
+If you want to set the default back just use `null`.
 
 ```js
 SetAppIcon.changeIcon(null);
@@ -44,7 +46,7 @@ SetAppIcon.changeIcon(null);
 
 ### getIconName
 
-Take a callback and receive an object with iconName in it.
+Takes a callback and receives an object with `iconName` in it.
 
 ```js
 SetAppIcon.getIconName(cb: (icon: { iconName: string }) => void): void;
@@ -52,7 +54,7 @@ SetAppIcon.getIconName(cb: (icon: { iconName: string }) => void): void;
 
 ### supportsDynamicAppIcon
 
-Return a Promise with a boolean if the device accept the dynamic app icon change.
+Returns a Promise with a boolean if the device accepts the dynamic app icon change.
 
 ```js
 SetAppIcon.supportsDynamicAppIcon(): Promise<boolean>;
