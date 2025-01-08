@@ -1,4 +1,7 @@
-# react-native-set-app-icon
+![appicon](https://github.com/user-attachments/assets/b30fd7ba-6e19-41a3-9c6f-4093606364a2)
+
+### About
+App & Flow is a Montreal-based React Native engineering and consulting studio. We partner with the world’s top companies and are recommended by [Expo](https://expo.dev/consultants). Need a hand? Let’s build together. team@appandflow.com
 
 Let your users dynamically change their app icons directly from within the app.
 
